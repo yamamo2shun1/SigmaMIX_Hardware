@@ -3,6 +3,8 @@ The SigmaMIX is a DSP board for Turntablist/Portablist, and it's an Open Source 
 
 **I haven't made sure them work yet on Apr 19 2017.**
 
+![SigmaMIX Board](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_dsp_brd.png "SigmaMIX Board")
+
 ## SPEC
 * DSP: ANALOG DEVICES SigmaDSP [ADAU1701](http://www.analog.com/jp/products/processors-dsp/sigmadsp-audio-processors/adau1701.html) x2
 * BLE: Silicon Labs [BGM113](http://jp.silabs.com/products/wireless/bluetooth/bluetooth-low-energy-modules/bgm113-bluetooth-low-energy-module)
