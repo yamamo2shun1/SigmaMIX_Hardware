@@ -1,5 +1,5 @@
 # SigmaMIX
-DSP Board for Turntablism
+The SigmaMIX is a DSP board for Turntablist/Portablist, and it's an Open Source Hardware.
 
 **I haven't made sure them work yet on Apr 19 2017.**
 
