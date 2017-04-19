@@ -1,6 +1,8 @@
 # SigmaMIX
 DSP Board for Turntablism
 
+**I haven't made sure them work yet on Apr 19 2017.**
+
 ## SPEC
 * DSP: ANALOG DEVICES SigmaDSP [ADAU1701](http://www.analog.com/jp/products/processors-dsp/sigmadsp-audio-processors/adau1701.html) x2
 * BLE: Silicon Labs [BGM113](http://jp.silabs.com/products/wireless/bluetooth/bluetooth-low-energy-modules/bgm113-bluetooth-low-energy-module)
