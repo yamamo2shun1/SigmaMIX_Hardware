@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3325,18 +3325,6 @@ Source: AVX .. aphvc.pdf</description>
 <smd name="P$2" x="3.2" y="0" dx="1.9" dy="5" layer="1"/>
 <text x="-3.9" y="3.1" size="0.6096" layer="25">&gt;NAME</text>
 <text x="0.5" y="-3.7" size="0.6096" layer="27">&gt;VALUE</text>
-</package>
-<package name="C01005">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<smd name="1" x="-0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<smd name="2" x="0.1625" y="0" dx="0.2" dy="0.25" layer="1"/>
-<text x="-0.4" y="0.3" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.4" y="-1.6" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2" y1="-0.1" x2="-0.075" y2="0.1" layer="51"/>
-<rectangle x1="0.075" y1="-0.1" x2="0.2" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="0.05" x2="0.15" y2="0.1" layer="51"/>
-<rectangle x1="-0.15" y1="-0.1" x2="0.15" y2="-0.05" layer="51"/>
 </package>
 <package name="CT3216">
 <description>&lt;b&gt;TANTALUM CAPACITOR&lt;/b&gt;</description>
@@ -8196,16 +8184,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="C-US">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4668" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.373024"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="C-EU" prefix="C" uservalue="yes">
@@ -10537,716 +10515,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C-US" prefix="C" uservalue="yes">
-<description>&lt;B&gt;CAPACITOR&lt;/B&gt;, American symbol</description>
-<gates>
-<gate name="G$1" symbol="C-US" x="0" y="0"/>
-</gates>
-<devices>
-<device name="C0402" package="C0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0504" package="C0504">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0603" package="C0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0805" package="C0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1206" package="C1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1210" package="C1210">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1310" package="C1310">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1608" package="C1608">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1812" package="C1812">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1825" package="C1825">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C2012" package="C2012">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C3216" package="C3216">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C3225" package="C3225">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C4532" package="C4532">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C4564" package="C4564">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025-024X044" package="C025-024X044">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025-025X050" package="C025-025X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025-030X050" package="C025-030X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025-040X050" package="C025-040X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025-050X050" package="C025-050X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025-060X050" package="C025-060X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C025_050-024X070" package="C025_050-024X070">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025_050-025X075" package="C025_050-025X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025_050-035X075" package="C025_050-035X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025_050-045X075" package="C025_050-045X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="025_050-055X075" package="C025_050-055X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-024X044" package="C050-024X044">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-025X075" package="C050-025X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-045X075" package="C050-045X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-030X075" package="C050-030X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-050X075" package="C050-050X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-055X075" package="C050-055X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-075X075" package="C050-075X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050H075X075" package="C050H075X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="075-032X103" package="C075-032X103">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="075-042X103" package="C075-042X103">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="075-052X106" package="C075-052X106">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="102-043X133" package="C102-043X133">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="102-054X133" package="C102-054X133">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="102-064X133" package="C102-064X133">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="102_152-062X184" package="C102_152-062X184">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="150-054X183" package="C150-054X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="150-064X183" package="C150-064X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="150-072X183" package="C150-072X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="150-084X183" package="C150-084X183">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="150-091X182" package="C150-091X182">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="225-062X268" package="C225-062X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="225-074X268" package="C225-074X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="225-087X268" package="C225-087X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="225-108X268" package="C225-108X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="225-113X268" package="C225-113X268">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="275-093X316" package="C275-093X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="275-113X316" package="C275-113X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="275-134X316" package="C275-134X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="275-205X316" package="C275-205X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="325-137X374" package="C325-137X374">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="325-162X374" package="C325-162X374">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="325-182X374" package="C325-182X374">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="375-192X418" package="C375-192X418">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="375-203X418" package="C375-203X418">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="050-035X075" package="C050-035X075">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="375-155X418" package="C375-155X418">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="075-063X106" package="C075-063X106">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="275-154X316" package="C275-154X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="275-173X316" package="C275-173X316">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0402K" package="C0402K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0603K" package="C0603K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0805K" package="C0805K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1206K" package="C1206K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1210K" package="C1210K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1812K" package="C1812K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1825K" package="C1825K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C2220K" package="C2220K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C2225K" package="C2225K">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C0201" package="C0201">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C1808" package="C1808">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="C3640" package="C3640">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="01005" package="C01005">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="pinhead">
@@ -12548,7 +11816,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="VDD9" library="supply1" deviceset="VDD" device="" value="3V3"/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
-<part name="C36" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
+<part name="C36" library="rcl" deviceset="CPOL-US" device="R/2012-12R" value="10uF"/>
 <part name="C38" library="rcl" deviceset="C-EU" device="C2012" value="0.1uF"/>
 <part name="C34" library="rcl" deviceset="C-EU" device="C2012" value="0.1uF"/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C2012" value="0.1uF"/>
@@ -12600,25 +11868,25 @@ http://www.zetex.com&lt;p&gt;
 <part name="R8" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C2012" value="100pF"/>
 <part name="C14" library="rcl" deviceset="C-EU" device="C2012" value="10uF"/>
-<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8k06"/>
+<part name="R18" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8R06"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="L2" library="rc-master-smd" deviceset="L_" device="0603"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C2012" value="10uF"/>
-<part name="R19" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8k06"/>
+<part name="R19" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8R06"/>
 <part name="R10" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C2012" value="100pF"/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="C60" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R36" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R36" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C65" library="rcl" deviceset="C-EU" device="C2012" value="56nF"/>
 <part name="R41" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="C61" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R37" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R37" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C62" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R38" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R38" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C63" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R39" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R39" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C67" library="rcl" deviceset="C-EU" device="C2012" value="56nF"/>
 <part name="R43" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="GND54" library="supply1" deviceset="GND" device=""/>
@@ -12639,7 +11907,7 @@ http://www.zetex.com&lt;p&gt;
 <part name="VDD10" library="supply1" deviceset="VDD" device="" value="3V3"/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="GND48" library="supply1" deviceset="GND" device=""/>
-<part name="C37" library="rcl" deviceset="C-US" device="C0805" value="10uF"/>
+<part name="C37" library="rcl" deviceset="CPOL-US" device="R/2012-12R" value="10uF"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C2012" value="0.1uF"/>
 <part name="C35" library="rcl" deviceset="C-EU" device="C2012" value="0.1uF"/>
 <part name="C29" library="rcl" deviceset="C-EU" device="C2012" value="0.1uF"/>
@@ -12683,25 +11951,25 @@ http://www.zetex.com&lt;p&gt;
 <part name="R9" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C2012" value="100pF"/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C2012" value="10uF"/>
-<part name="R20" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8k06"/>
+<part name="R20" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8R06"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="L4" library="rc-master-smd" deviceset="L_" device="0603"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C2012" value="10uF"/>
-<part name="R21" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8k06"/>
+<part name="R21" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="8R06"/>
 <part name="R11" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="C12" library="rcl" deviceset="C-EU" device="C2012" value="100pF"/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="C56" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R32" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R32" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C64" library="rcl" deviceset="C-EU" device="C2012" value="56nF"/>
 <part name="R40" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="C57" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R33" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R33" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C58" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R34" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R34" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C59" library="rcl" deviceset="CPOL-US" device="B/3528-21R" value="100uF"/>
-<part name="R35" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56k2"/>
+<part name="R35" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="56R2"/>
 <part name="C66" library="rcl" deviceset="C-EU" device="C2012" value="56nF"/>
 <part name="R42" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="49k9"/>
 <part name="GND53" library="supply1" deviceset="GND" device=""/>
@@ -12734,6 +12002,8 @@ http://www.zetex.com&lt;p&gt;
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="100k"/>
 <part name="VDD19" library="supply1" deviceset="VDD" device="" value="3V3"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0603-RES" value="10k"/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13441,18 +12711,18 @@ http://www.zetex.com&lt;p&gt;
 <instance part="JP6" gate="-9" x="24.13" y="148.59"/>
 <instance part="JP6" gate="-10" x="24.13" y="146.05"/>
 <instance part="GND23" gate="1" x="33.02" y="140.97"/>
-<instance part="U3" gate="A" x="102.87" y="257.81" smashed="yes">
-<attribute name="NAME" x="90.17" y="264.3378" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="91.2114" y="244.9068" size="2.0828" layer="96" ratio="10" rot="SR0"/>
+<instance part="U3" gate="A" x="95.25" y="257.81" smashed="yes">
+<attribute name="NAME" x="82.55" y="264.3378" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="83.5914" y="244.9068" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="C13" gate="G$1" x="80.01" y="247.65" smashed="yes">
-<attribute name="NAME" x="80.899" y="248.031" size="1.778" layer="95"/>
-<attribute name="VALUE" x="80.899" y="243.586" size="1.778" layer="96"/>
+<instance part="C13" gate="G$1" x="72.39" y="247.65" smashed="yes">
+<attribute name="NAME" x="73.279" y="248.031" size="1.778" layer="95"/>
+<attribute name="VALUE" x="73.279" y="243.586" size="1.778" layer="96"/>
 </instance>
-<instance part="GND32" gate="1" x="80.01" y="234.95"/>
+<instance part="GND32" gate="1" x="72.39" y="234.95"/>
 <instance part="SW4" gate="G$1" x="22.86" y="133.35"/>
 <instance part="GND22" gate="1" x="12.7" y="128.27"/>
-<instance part="VDD8" gate="G$1" x="73.66" y="252.73"/>
+<instance part="VDD8" gate="G$1" x="66.04" y="252.73"/>
 <instance part="VDD15" gate="G$1" x="229.87" y="203.2"/>
 <instance part="GND45" gate="1" x="232.41" y="193.04"/>
 <instance part="R12" gate="G$1" x="76.2" y="163.83" smashed="yes" rot="R90">
@@ -13836,6 +13106,11 @@ http://www.zetex.com&lt;p&gt;
 <instance part="J9" gate="G$1" x="478.79" y="200.66" rot="MR0"/>
 <instance part="J6" gate="G$1" x="477.52" y="109.22" rot="MR0"/>
 <instance part="J7" gate="G$1" x="477.52" y="83.82" rot="MR0"/>
+<instance part="R2" gate="G$1" x="120.65" y="247.65" smashed="yes" rot="R90">
+<attribute name="NAME" x="121.6914" y="250.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="121.412" y="243.84" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="120.65" y="237.49"/>
 </instances>
 <busses>
 </busses>
@@ -13881,7 +13156,7 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="194.31" y1="210.82" x2="194.31" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="204.47" y1="213.36" x2="204.47" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="204.47" y1="210.82" x2="194.31" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="C36" gate="G$1" pin="2"/>
+<pinref part="C36" gate="G$1" pin="-"/>
 <wire x1="214.63" y1="213.36" x2="214.63" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="210.82" x2="204.47" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="C38" gate="G$1" pin="2"/>
@@ -13964,13 +13239,13 @@ http://www.zetex.com&lt;p&gt;
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
 <pinref part="GND32" gate="1" pin="GND"/>
-<wire x1="80.01" y1="237.49" x2="80.01" y2="240.03" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="237.49" x2="72.39" y2="240.03" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="GND"/>
-<wire x1="80.01" y1="240.03" x2="80.01" y2="242.57" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="252.73" x2="123.19" y2="252.73" width="0.1524" layer="91"/>
-<wire x1="123.19" y1="252.73" x2="123.19" y2="240.03" width="0.1524" layer="91"/>
-<wire x1="123.19" y1="240.03" x2="80.01" y2="240.03" width="0.1524" layer="91"/>
-<junction x="80.01" y="240.03"/>
+<wire x1="72.39" y1="240.03" x2="72.39" y2="242.57" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="252.73" x2="115.57" y2="252.73" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="252.73" x2="115.57" y2="240.03" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="240.03" x2="72.39" y2="240.03" width="0.1524" layer="91"/>
+<junction x="72.39" y="240.03"/>
 </segment>
 <segment>
 <pinref part="U4" gate="B" pin="PLL_MODE0"/>
@@ -14100,7 +13375,7 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="194.31" y1="93.98" x2="194.31" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="204.47" y1="96.52" x2="204.47" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="204.47" y1="93.98" x2="194.31" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C37" gate="G$1" pin="2"/>
+<pinref part="C37" gate="G$1" pin="-"/>
 <wire x1="214.63" y1="96.52" x2="214.63" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="93.98" x2="204.47" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C39" gate="G$1" pin="2"/>
@@ -14288,6 +13563,11 @@ http://www.zetex.com&lt;p&gt;
 <wire x1="467.36" y1="101.6" x2="467.36" y2="76.2" width="0.1524" layer="91"/>
 <junction x="467.36" y="76.2"/>
 </segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="120.65" y1="240.03" x2="120.65" y2="242.57" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VDD" class="0">
 <segment>
@@ -14308,7 +13588,7 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="C38" gate="G$1" pin="1"/>
 <wire x1="240.03" y1="223.52" x2="222.25" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="222.25" y1="223.52" x2="222.25" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="C36" gate="G$1" pin="1"/>
+<pinref part="C36" gate="G$1" pin="+"/>
 <wire x1="222.25" y1="223.52" x2="214.63" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="223.52" x2="214.63" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="223.52" x2="194.31" y2="223.52" width="0.1524" layer="91"/>
@@ -14355,13 +13635,13 @@ http://www.zetex.com&lt;p&gt;
 <segment>
 <pinref part="U3" gate="A" pin="VCC"/>
 <pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="85.09" y1="252.73" x2="80.01" y2="252.73" width="0.1524" layer="91"/>
-<wire x1="80.01" y1="252.73" x2="80.01" y2="250.19" width="0.1524" layer="91"/>
-<wire x1="80.01" y1="252.73" x2="77.47" y2="252.73" width="0.1524" layer="91"/>
-<wire x1="77.47" y1="252.73" x2="77.47" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="252.73" x2="72.39" y2="252.73" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="252.73" x2="72.39" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="252.73" x2="69.85" y2="252.73" width="0.1524" layer="91"/>
+<wire x1="69.85" y1="252.73" x2="69.85" y2="250.19" width="0.1524" layer="91"/>
 <pinref part="VDD8" gate="G$1" pin="VDD"/>
-<wire x1="77.47" y1="250.19" x2="73.66" y2="250.19" width="0.1524" layer="91"/>
-<junction x="80.01" y="252.73"/>
+<wire x1="69.85" y1="250.19" x2="66.04" y2="250.19" width="0.1524" layer="91"/>
+<junction x="72.39" y="252.73"/>
 </segment>
 <segment>
 <pinref part="U4" gate="B" pin="PLL_MODE1"/>
@@ -14405,7 +13685,7 @@ http://www.zetex.com&lt;p&gt;
 <pinref part="C39" gate="G$1" pin="1"/>
 <wire x1="240.03" y1="106.68" x2="222.25" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="222.25" y1="106.68" x2="222.25" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C37" gate="G$1" pin="1"/>
+<pinref part="C37" gate="G$1" pin="+"/>
 <wire x1="222.25" y1="106.68" x2="214.63" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="106.68" x2="214.63" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="214.63" y1="106.68" x2="194.31" y2="106.68" width="0.1524" layer="91"/>
@@ -14780,8 +14060,8 @@ http://www.zetex.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="MR*"/>
-<wire x1="82.55" y1="257.81" x2="85.09" y2="257.81" width="0.1524" layer="91"/>
-<label x="82.55" y="257.81" size="1.778" layer="95" rot="R180"/>
+<wire x1="74.93" y1="257.81" x2="77.47" y2="257.81" width="0.1524" layer="91"/>
+<label x="74.93" y="257.81" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
 <pinref part="SW4" gate="G$1" pin="P$2"/>
@@ -15527,8 +14807,12 @@ http://www.zetex.com&lt;p&gt;
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="RESET*"/>
-<wire x1="120.65" y1="257.81" x2="123.19" y2="257.81" width="0.1524" layer="91"/>
+<wire x1="113.03" y1="257.81" x2="120.65" y2="257.81" width="0.1524" layer="91"/>
 <label x="123.19" y="257.81" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="120.65" y1="257.81" x2="123.19" y2="257.81" width="0.1524" layer="91"/>
+<wire x1="120.65" y1="252.73" x2="120.65" y2="257.81" width="0.1524" layer="91"/>
+<junction x="120.65" y="257.81"/>
 </segment>
 <segment>
 <pinref part="U4" gate="A" pin="*RESET"/>
