@@ -7093,7 +7093,7 @@
 <rectangle x1="79.416275" y1="99.666425" x2="90.268425" y2="99.672775" layer="21"/>
 <rectangle x1="79.473425" y1="99.672775" x2="90.217625" y2="99.679125" layer="21"/>
 <text x="90.6" y="86.3" size="1.6764" layer="21" font="vector" ratio="12" rot="R180">SigmaMIX</text>
-<text x="90.6" y="84.4" size="0.6096" layer="21" font="vector" ratio="12" rot="R180">v0.2</text>
+<text x="90.6" y="84.4" size="0.6096" layer="21" font="vector" ratio="12" rot="R180">v0.3</text>
 <text x="-12.388240625" y="83.9296" size="0.4064" layer="21" font="vector">PD13 / PB13 / PB11 / PC11 / PA00
 PA01 / PB12 / PD14 / PC10 / PD15</text>
 <text x="-12.2204" y="76.238240625" size="0.4064" layer="21" font="vector">VDD x5
@@ -13172,6 +13172,16 @@ MP1 / MP3 / MP8</text>
 <rectangle x1="88.0999" y1="81.8769" x2="88.1253" y2="81.9023" layer="21"/>
 <text x="-12.2204" y="68.638240625" size="0.4064" layer="21" font="vector">VDD x5
 GND x5</text>
+<text x="40.5" y="67.9" size="0.6096" layer="21">ADDR0</text>
+<text x="40.5" y="67" size="0.6096" layer="21">ADDR1</text>
+<text x="40.5" y="66.1" size="0.6096" layer="21">SELF_BOOT</text>
+<text x="40.5" y="65.2" size="0.6096" layer="21">WP</text>
+<text x="75.15" y="69.7" size="0.6096" layer="21">ADDR0</text>
+<text x="75.15" y="68.8" size="0.6096" layer="21">ADDR1</text>
+<text x="75.15" y="67.9" size="0.6096" layer="21">SELF_BOOT</text>
+<text x="75.15" y="67" size="0.6096" layer="21">WP</text>
+<text x="8.2" y="82.95" size="0.6096" layer="21" rot="R180">RESET</text>
+<text x="-7.95" y="60" size="1.016" layer="21" rot="R90">5-16V</text>
 </plain>
 <libraries>
 <library name="ADI-Phase-2">
@@ -13667,22 +13677,6 @@ at 08/10/2012 14:57:29</description>
 <rectangle x1="-1" y1="-0.45" x2="-0.875" y2="0.45" layer="51"/>
 <rectangle x1="0.875" y1="-0.45" x2="1" y2="0.45" layer="51"/>
 <rectangle x1="0.3" y1="-0.625" x2="0.5" y2="0.625" layer="51"/>
-</package>
-<package name="C0805">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
-<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
 </packages>
 </library>
@@ -14342,12 +14336,12 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="27.64" y="85.33" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C18" library="rcl" package="R/2012-12R" value="10uF" x="24.9" y="83.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="23.72" y="81.87" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="25.51" y="81.82" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="24.87" y="86.87" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.66" y="86.87" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="C36" library="rcl" package="C0805" value="10uF" x="35.2" y="66.4" smashed="yes">
-<attribute name="NAME" x="37.13" y="66.47" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="37.13" y="65.76" size="0.6096" layer="27"/>
+<element name="C36" library="rcl" package="R/2012-12R" value="10uF" x="35.2" y="66.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="37.42" y="66.68" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="37.42" y="65.94" size="0.6096" layer="27"/>
 </element>
 <element name="C38" library="rcl" package="C2012" value="0.1uF" x="35.2" y="68.9" smashed="yes">
 <attribute name="NAME" x="36.73" y="70.52" size="0.6096" layer="25" rot="R180"/>
@@ -14370,16 +14364,16 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="32.9" y="83.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R26" library="SparkFun" package="0603-RES" value="1k" x="30.2" y="83.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.9134" y="84.9504" size="0.6096" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="30.8418" y="84.9604" size="0.6096" layer="27" font="vector" rot="R90"/>
+<attribute name="NAME" x="29.9134" y="85.0504" size="0.6096" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="30.8418" y="85.0604" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C26" library="rcl" package="C2012" value="0.1uF" x="22.5" y="83.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.28" y="85.28" size="0.6096" layer="25" rot="R90"/>
-<attribute name="VALUE" x="22.94" y="85.28" size="0.6096" layer="27" rot="R90"/>
+<attribute name="NAME" x="22.28" y="85.53" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="22.94" y="85.53" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C24" library="rcl" package="R/2012-12R" value="10uF" x="20.3" y="83.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.27" y="85.12" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="20.11" y="81.82" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="19.12" y="81.67" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="20.71" y="85.87" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C22" library="rcl" package="C2012" value="0.1uF" x="36.2" y="83.52" smashed="yes" rot="R270">
 <attribute name="NAME" x="35.72" y="85.54" size="0.6096" layer="25" rot="R90"/>
@@ -14403,7 +14397,7 @@ design rules under a new name.</description>
 </element>
 <element name="C46" library="rcl" package="C2012" value="10uF" x="31.2" y="66.4" smashed="yes">
 <attribute name="NAME" x="29.73" y="67.37" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="31.38" y="65.51" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="31.38" y="65.41" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="C48" library="rcl" package="C2012" value="0.1uF" x="27.2" y="68.9" smashed="yes">
 <attribute name="NAME" x="27.08" y="70.42" size="0.6096" layer="25" rot="R180"/>
@@ -14411,7 +14405,7 @@ design rules under a new name.</description>
 </element>
 <element name="C50" library="rcl" package="C2012" value="10uF" x="27.2" y="66.4" smashed="yes">
 <attribute name="NAME" x="27.2706" y="67.3438" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="27.33" y="65.41" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="27.48" y="65.41" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="C52" library="rcl" package="C2012" value="0.1uF" x="23.2" y="68.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="23.7956" y="67.9292" size="0.6096" layer="25" rot="R180"/>
@@ -14419,11 +14413,11 @@ design rules under a new name.</description>
 </element>
 <element name="C54" library="rcl" package="C2012" value="10uF" x="23.2" y="66.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.6106" y="65.4164" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="23.351" y="64.84" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="22.901" y="64.84" size="0.6096" layer="27"/>
 </element>
 <element name="X1" library="tkrworks2" package="ABMXX-XXMHZ-XX-X-X-X" value="12.288MHz" x="19.2" y="76.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.19" y="78.09" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="20.89" y="77.24" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="20.99" y="77.24" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="C30" library="rcl" package="C2012" value="22pF" x="16.4" y="76.3" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.67" y="78.02" size="0.6096" layer="25" rot="R90"/>
@@ -14439,7 +14433,7 @@ design rules under a new name.</description>
 </element>
 <element name="R24" library="SparkFun" package="0603-RES" value="18k" x="34.7" y="71.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.239" y="71.988" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="33.316" y="71.443" size="0.6096" layer="27" font="vector" rot="R180"/>
+<attribute name="VALUE" x="33.116" y="71.443" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="JP6" library="con-3m" package="PAK100/2500-10" value="USBi" x="5.16" y="93.47" smashed="yes" rot="R90">
 <attribute name="MF" value="3M" x="5.16" y="93.47" size="1.778" layer="27" rot="R90" display="off"/>
@@ -14457,15 +14451,15 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="3.7" y="78.7" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="SW4" library="tkrworks" package="OMRON_B3M" value="OMRON_B3M" x="12.06" y="76.19" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.82" y="77.68" size="0.6096" layer="21" rot="R180"/>
+<attribute name="NAME" x="8.97" y="73.83" size="0.6096" layer="21" rot="R180"/>
 </element>
 <element name="R12" library="SparkFun" package="0603-RES" value="10k" x="34.7" y="80.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.289" y="80.838" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.566" y="78.843" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="35.566" y="78.743" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="R14" library="SparkFun" package="0603-RES" value="10k" x="34.7" y="77.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.289" y="78.588" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.566" y="76.593" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="35.566" y="76.543" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="SW1" library="special" package="EDG-04" value="" x="42.54" y="74.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="47.724" y="80.392" size="0.6096" layer="25" ratio="10" rot="R270"/>
@@ -14473,11 +14467,11 @@ design rules under a new name.</description>
 </element>
 <element name="R16" library="SparkFun" package="0603-RES" value="10k" x="34.7" y="75.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.289" y="76.388" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.566" y="74.443" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="35.566" y="74.343" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="R22" library="SparkFun" package="0603-RES" value="10k" x="34.7" y="73.5" smashed="yes" rot="R180">
 <attribute name="NAME" x="33.289" y="74.188" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.566" y="72.243" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="35.566" y="72.143" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="L1" library="rc-master-smd" package="L0603" value="L_0603" x="29.7" y="94.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.634" y="95.976" size="0.6096" layer="25" ratio="18" rot="R90"/>
@@ -14495,9 +14489,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="34.13" y="88.48" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="36.39" y="89.83" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="R18" library="SparkFun" package="0603-RES" value="8k06" x="37.3" y="90.1" smashed="yes" rot="R90">
+<element name="R18" library="SparkFun" package="0603-RES" value="8R06" x="37.3" y="90.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.888" y="88.461" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="38.073" y="90.364" size="0.6096" layer="27" font="vector" rot="R270"/>
+<attribute name="VALUE" x="38.173" y="90.364" size="0.6096" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="L2" library="rc-master-smd" package="L0603" value="L_0603" x="12.8" y="94.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.684" y="95.976" size="0.6096" layer="25" ratio="18" rot="R90"/>
@@ -14507,9 +14501,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="17.88" y="88.48" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="19.39" y="89.83" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="R19" library="SparkFun" package="0603-RES" value="8k06" x="20.2" y="90.1" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.338" y="88.661" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="21.543" y="89.434" size="0.6096" layer="27" font="vector" rot="R90"/>
+<element name="R19" library="SparkFun" package="0603-RES" value="8R06" x="20.2" y="90.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.338" y="88.561" size="0.6096" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="21.693" y="89.534" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R10" library="SparkFun" package="0603-RES" value="49k9" x="12.8" y="90.1" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.088" y="88.761" size="0.6096" layer="25" font="vector" rot="R90"/>
@@ -14523,7 +14517,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.1282" y="64.089" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="30.695" y="63.5538" size="0.6096" layer="27"/>
 </element>
-<element name="R36" library="SparkFun" package="0603-RES" value="56k2" x="29.9" y="59" smashed="yes">
+<element name="R36" library="SparkFun" package="0603-RES" value="56R2" x="29.9" y="59" smashed="yes">
 <attribute name="NAME" x="28.551" y="59.712" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="28.524" y="57.727" size="0.6096" layer="27" font="vector"/>
 </element>
@@ -14539,7 +14533,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.62" y="64.18" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="38.87" y="60.99" size="0.6096" layer="27"/>
 </element>
-<element name="R37" library="SparkFun" package="0603-RES" value="56k2" x="37.95" y="59" smashed="yes">
+<element name="R37" library="SparkFun" package="0603-RES" value="56R2" x="37.95" y="59" smashed="yes">
 <attribute name="NAME" x="36.611" y="59.712" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="37.284" y="57.657" size="0.6096" layer="27" font="vector"/>
 </element>
@@ -14547,7 +14541,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="14.58" y="63.17" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="14.58" y="62.36" size="0.6096" layer="27" rot="R180"/>
 </element>
-<element name="R38" library="SparkFun" package="0603-RES" value="56k2" x="15.4" y="59.1" smashed="yes" rot="R180">
+<element name="R38" library="SparkFun" package="0603-RES" value="56R2" x="15.4" y="59.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="14.039" y="59.788" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="14.816" y="57.743" size="0.6096" layer="27" font="vector"/>
 </element>
@@ -14555,25 +14549,25 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.7332" y="64.2062" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="23.9508" y="63.6078" size="0.6096" layer="27"/>
 </element>
-<element name="R39" library="SparkFun" package="0603-RES" value="56k2" x="23.5" y="59.1" smashed="yes" rot="R180">
+<element name="R39" library="SparkFun" package="0603-RES" value="56R2" x="23.5" y="59.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="22.139" y="59.788" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="25.066" y="59.043" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="25.216" y="58.993" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C67" library="rcl" package="C2012" value="56nF" x="11.8" y="59.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="10.32" y="60.08" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="10.07" y="58.99" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R43" library="SparkFun" package="0603-RES" value="49k9" x="11.8" y="56.8" smashed="yes">
-<attribute name="NAME" x="10.411" y="57.412" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="11.134" y="55.557" size="0.6096" layer="27" font="vector"/>
+<attribute name="NAME" x="10.111" y="57.112" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="13.534" y="56.007" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C69" library="rcl" package="C2012" value="56nF" x="41.6" y="59" smashed="yes">
 <attribute name="NAME" x="40.08" y="59.97" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="43.28" y="58.26" size="0.6096" layer="27"/>
+<attribute name="VALUE" x="43.63" y="58.31" size="0.6096" layer="27"/>
 </element>
 <element name="R45" library="SparkFun" package="0603-RES" value="49k9" x="41.6" y="56.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.189" y="57.338" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="43.166" y="56.093" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="43.316" y="56.093" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C71" library="rcl" package="C2012" value="56nF" x="33.5" y="59" smashed="yes">
 <attribute name="NAME" x="31.99" y="59.95" size="0.6096" layer="25"/>
@@ -14581,7 +14575,7 @@ design rules under a new name.</description>
 </element>
 <element name="R47" library="SparkFun" package="0603-RES" value="49k9" x="33.5" y="56.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="32.099" y="57.388" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="35.026" y="56.193" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="35.226" y="56.193" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="J2" library="tkrworks" package="RCA_JACK_CUI" value="RCA_JACK_CUI" x="35.2" y="103.6" smashed="yes" rot="R90">
 <attribute name="NAME" x="40.2" y="92.9" size="0.6096" layer="25" rot="R90"/>
@@ -14599,16 +14593,16 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="62.1544" y="78.775" size="0.4064" layer="27" ratio="10" rot="SR270"/>
 </element>
 <element name="C21" library="rcl" package="C2012" value="0.1uF" x="61.675" y="84.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="61.505" y="86.08" size="0.6096" layer="25" rot="R90"/>
-<attribute name="VALUE" x="62.215" y="86.08" size="0.6096" layer="27" rot="R90"/>
+<attribute name="NAME" x="61.255" y="86.13" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="61.965" y="86.13" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C19" library="rcl" package="R/2012-12R" value="10uF" x="59.575" y="84.2" smashed="yes" rot="R270">
-<attribute name="NAME" x="59.695" y="82.32" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="58.935" y="82.32" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="59.345" y="86.42" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="60.135" y="86.47" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="C37" library="rcl" package="C0805" value="10uF" x="69.6" y="66.4" smashed="yes">
-<attribute name="NAME" x="71.73" y="66.52" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="71.73" y="65.76" size="0.6096" layer="27"/>
+<element name="C37" library="rcl" package="R/2012-12R" value="10uF" x="69.6" y="66.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.82" y="66.63" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="71.82" y="65.84" size="0.6096" layer="27"/>
 </element>
 <element name="C39" library="rcl" package="C2012" value="0.1uF" x="69.6" y="68.9" smashed="yes">
 <attribute name="NAME" x="71.78" y="69.02" size="0.6096" layer="25"/>
@@ -14631,28 +14625,28 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="unknown" x="67.6" y="83.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R27" library="SparkFun" package="0603-RES" value="1k" x="64.8" y="83.4" smashed="yes" rot="R90">
-<attribute name="NAME" x="64.528" y="85.011" size="0.6096" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="65.313" y="85.034" size="0.6096" layer="27" font="vector" rot="R90"/>
+<attribute name="NAME" x="64.528" y="85.111" size="0.6096" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="65.313" y="85.134" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C27" library="rcl" package="C2012" value="0.1uF" x="56.5" y="84.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="56.58" y="82.48" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="57.44" y="85.58" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="C25" library="rcl" package="R/2012-12R" value="10uF" x="54" y="84.2" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.92" y="86.02" size="0.6096" layer="25" rot="R90"/>
-<attribute name="VALUE" x="53.06" y="82.72" size="0.6096" layer="27" rot="R90"/>
+<attribute name="NAME" x="52.97" y="82.22" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="53.76" y="86.37" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C23" library="rcl" package="C2012" value="0.1uF" x="68.33" y="86.09" smashed="yes">
 <attribute name="NAME" x="70.39" y="85.85" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="70.4" y="85.15" size="0.6096" layer="27"/>
 </element>
 <element name="C41" library="rcl" package="C2012" value="56nF" x="53.6" y="66.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="53.084" y="67.95" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="53.4912" y="67.3362" size="0.6096" layer="27"/>
+<attribute name="NAME" x="52.434" y="67.95" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="55.2412" y="67.9362" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R31" library="SparkFun" package="0603-RES" value="475" x="49.9984" y="66.4" smashed="yes">
-<attribute name="NAME" x="49.3594" y="65.662" size="0.6096" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="49.8324" y="65.057" size="0.6096" layer="27" font="vector"/>
+<attribute name="NAME" x="48.4094" y="67.212" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="48.4324" y="66.307" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="C43" library="rcl" package="C2012" value="3.3nF" x="53.6" y="64.3" smashed="yes" rot="R180">
 <attribute name="NAME" x="51.92" y="64.88" size="0.6096" layer="25" rot="R180"/>
@@ -14664,7 +14658,7 @@ design rules under a new name.</description>
 </element>
 <element name="C47" library="rcl" package="C2012" value="10uF" x="65.6" y="66.4" smashed="yes">
 <attribute name="NAME" x="64.08" y="67.37" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="65.68" y="65.51" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="65.68" y="65.41" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="C49" library="rcl" package="C2012" value="0.1uF" x="61.6" y="68.9" smashed="yes">
 <attribute name="NAME" x="61.53" y="70.42" size="0.6096" layer="25" rot="R180"/>
@@ -14672,19 +14666,19 @@ design rules under a new name.</description>
 </element>
 <element name="C51" library="rcl" package="C2012" value="10uF" x="61.6" y="66.4" smashed="yes">
 <attribute name="NAME" x="61.48" y="67.97" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="61.73" y="65.51" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="61.88" y="65.36" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="C53" library="rcl" package="C2012" value="0.1uF" x="57.6" y="68.9" smashed="yes" rot="R180">
 <attribute name="NAME" x="57.0232" y="70.5208" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="55.7994" y="68.77" size="0.6096" layer="27" rot="R180"/>
+<attribute name="VALUE" x="56.0494" y="68.77" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="C55" library="rcl" package="C2012" value="10uF" x="57.6" y="66.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.4956" y="67.9564" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="57.52" y="64.79" size="0.6096" layer="27"/>
+<attribute name="NAME" x="56.2956" y="67.3564" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="57.37" y="64.79" size="0.6096" layer="27"/>
 </element>
 <element name="X2" library="tkrworks2" package="ABMXX-XXMHZ-XX-X-X-X" value="12.288MHz" x="53.6" y="76" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.19" y="77.99" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="55.19" y="77.39" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="55.29" y="77.39" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="C32" library="rcl" package="C2012" value="22pF" x="51" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="49.97" y="77.67" size="0.6096" layer="25" rot="R180"/>
@@ -14727,20 +14721,20 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="73.674" y="95.526" size="0.6096" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="R9" library="SparkFun" package="0603-RES" value="49k9" x="75.1" y="90" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.738" y="88.511" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="76.343" y="89.334" size="0.6096" layer="27" font="vector" rot="R90"/>
+<attribute name="NAME" x="74.738" y="88.411" size="0.6096" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="76.593" y="89.334" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C10" library="rcl" package="C2012" value="100pF" x="72.5" y="90" smashed="yes" rot="R270">
-<attribute name="NAME" x="71.87" y="88.37" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="74.127" y="90.0066" size="0.6096" layer="27" rot="R90"/>
+<attribute name="NAME" x="72.67" y="88.27" size="0.6096" layer="25" rot="R270"/>
+<attribute name="VALUE" x="74.127" y="89.1566" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C16" library="rcl" package="C2012" value="10uF" x="69.9" y="90" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.03" y="88.43" size="0.6096" layer="25" rot="R270"/>
+<attribute name="NAME" x="70.03" y="88.28" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="71.5" y="89.9848" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="R20" library="SparkFun" package="0603-RES" value="8k06" x="67.6" y="90" smashed="yes" rot="R90">
+<element name="R20" library="SparkFun" package="0603-RES" value="8R06" x="67.6" y="90" smashed="yes" rot="R90">
 <attribute name="NAME" x="66.888" y="88.661" size="0.6096" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" x="68.843" y="89.334" size="0.6096" layer="27" font="vector" rot="R90"/>
+<attribute name="VALUE" x="68.943" y="89.384" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="L4" library="rc-master-smd" package="L0603" value="L_0603" x="47" y="94.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.934" y="96.376" size="0.6096" layer="25" ratio="18" rot="R90"/>
@@ -14750,9 +14744,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="50.53" y="89.38" size="0.6096" layer="25" rot="R270"/>
 <attribute name="VALUE" x="53.69" y="90.03" size="0.6096" layer="27" rot="R90"/>
 </element>
-<element name="R21" library="SparkFun" package="0603-RES" value="8k06" x="54.4" y="90.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="53.988" y="88.711" size="0.6096" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="55.693" y="89.784" size="0.6096" layer="27" font="vector" rot="R90"/>
+<element name="R21" library="SparkFun" package="0603-RES" value="8R06" x="54.4" y="90.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="54.738" y="88.711" size="0.6096" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="55.893" y="89.784" size="0.6096" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R11" library="SparkFun" package="0603-RES" value="49k9" x="47" y="90.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.638" y="90.161" size="0.6096" layer="25" font="vector" rot="R270"/>
@@ -14763,42 +14757,42 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="50.96" y="90.12" size="0.6096" layer="27" rot="R90"/>
 </element>
 <element name="C56" library="rcl" package="B/3528-21R" value="100uF" x="72.1888" y="62.05" smashed="yes">
-<attribute name="NAME" x="69.7188" y="63.57" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="69.4188" y="62.96" size="0.6096" layer="27" rot="R180"/>
+<attribute name="NAME" x="69.6688" y="63.52" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="72.5688" y="63.56" size="0.6096" layer="27"/>
 </element>
-<element name="R32" library="SparkFun" package="0603-RES" value="56k2" x="71.9" y="59.2" smashed="yes">
-<attribute name="NAME" x="70.511" y="59.862" size="0.6096" layer="25" font="vector"/>
+<element name="R32" library="SparkFun" package="0603-RES" value="56R2" x="71.9" y="59.2" smashed="yes">
+<attribute name="NAME" x="70.511" y="59.962" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="70.484" y="57.807" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C64" library="rcl" package="C2012" value="56nF" x="61.9" y="59.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="60.42" y="60.18" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="60.27" y="58.366" size="0.6096" layer="27" rot="R180"/>
+<attribute name="NAME" x="60.22" y="60.18" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="61.42" y="58.216" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R40" library="SparkFun" package="0603-RES" value="49k9" x="61.9" y="56.7" smashed="yes">
-<attribute name="NAME" x="63.4582" y="56.8016" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="63.4692" y="56.0174" size="0.6096" layer="27" font="vector"/>
+<attribute name="NAME" x="63.5582" y="56.8016" size="0.6096" layer="25" font="vector"/>
+<attribute name="VALUE" x="63.5692" y="56.0174" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C57" library="rcl" package="B/3528-21R" value="100uF" x="78.2" y="62.05" smashed="yes" rot="R180">
-<attribute name="NAME" x="80.67" y="64.08" size="0.6096" layer="25" rot="R180"/>
+<attribute name="NAME" x="80.62" y="64.18" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="80.92" y="62.54" size="0.6096" layer="27"/>
 </element>
-<element name="R33" library="SparkFun" package="0603-RES" value="56k2" x="80" y="59.2" smashed="yes">
+<element name="R33" library="SparkFun" package="0603-RES" value="56R2" x="80" y="59.2" smashed="yes">
 <attribute name="NAME" x="78.611" y="59.962" size="0.6096" layer="25" font="vector"/>
-<attribute name="VALUE" x="79.334" y="57.957" size="0.6096" layer="27" font="vector"/>
+<attribute name="VALUE" x="79.334" y="57.757" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C58" library="rcl" package="B/3528-21R" value="100uF" x="57.3" y="62.05" smashed="yes" rot="R180">
-<attribute name="NAME" x="52.2452" y="62.0992" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="60.17" y="61.74" size="0.6096" layer="27"/>
+<attribute name="NAME" x="54.5952" y="62.3992" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="54.62" y="61.59" size="0.6096" layer="27" rot="R180"/>
 </element>
-<element name="R34" library="SparkFun" package="0603-RES" value="56k2" x="57.4388" y="59.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="57.6864" y="60.6732" size="0.6096" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="57.8198" y="58.2046" size="0.6096" layer="27" font="vector" rot="R180"/>
+<element name="R34" library="SparkFun" package="0603-RES" value="56R2" x="57.4388" y="59.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="57.6864" y="60.5732" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="58.2698" y="58.2046" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="C59" library="rcl" package="B/3528-21R" value="100uF" x="64.5" y="62.05" smashed="yes" rot="R180">
-<attribute name="NAME" x="61.97" y="63.48" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="67.27" y="60.84" size="0.6096" layer="27"/>
+<attribute name="NAME" x="63.42" y="64.13" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="65.27" y="63.49" size="0.6096" layer="27"/>
 </element>
-<element name="R35" library="SparkFun" package="0603-RES" value="56k2" x="65.5" y="59.2" smashed="yes" rot="R180">
+<element name="R35" library="SparkFun" package="0603-RES" value="56R2" x="65.5" y="59.2" smashed="yes" rot="R180">
 <attribute name="NAME" x="64.139" y="59.988" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="64.816" y="57.743" size="0.6096" layer="27" font="vector"/>
 </element>
@@ -14811,16 +14805,16 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="52.302" y="56.3814" size="0.6096" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="C68" library="rcl" package="C2012" value="56nF" x="83.6" y="59.2" smashed="yes">
-<attribute name="NAME" x="82.13" y="60.32" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="84.13" y="57.71" size="0.6096" layer="27"/>
+<attribute name="NAME" x="85.63" y="59.27" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="85.63" y="58.41" size="0.6096" layer="27"/>
 </element>
 <element name="R44" library="SparkFun" package="0603-RES" value="49k9" x="83.6" y="56.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="85.339" y="56.688" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="85.316" y="55.993" size="0.6096" layer="27" font="vector"/>
 </element>
 <element name="C70" library="rcl" package="C2012" value="56nF" x="75.5" y="59.2" smashed="yes">
-<attribute name="NAME" x="74.03" y="60.07" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="75.98" y="57.71" size="0.6096" layer="27"/>
+<attribute name="NAME" x="75.33" y="58.22" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="75.98" y="57.66" size="0.6096" layer="27"/>
 </element>
 <element name="R46" library="SparkFun" package="0603-RES" value="49k9" x="75.5" y="56.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="77.239" y="56.638" size="0.6096" layer="25" font="vector"/>
@@ -14837,7 +14831,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="" x="13.9" y="84.4" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="13.9" y="84.4" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="13.9" y="84.4" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="10.79" y="87.121" size="0.6096" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="10.79" y="87.121" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="12.63" y="80.209" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="JP4" library="con-lstb" package="MA03-2" value="" x="47.7" y="84.85" smashed="yes">
@@ -14884,6 +14878,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="2.411" y="70.112" size="0.6096" layer="25" font="vector"/>
 <attribute name="VALUE" x="3.284" y="67.807" size="0.6096" layer="27" font="vector"/>
 </element>
+<element name="R2" library="SparkFun" package="0603-RES" value="10k" x="7" y="77.55" smashed="yes">
+<attribute name="NAME" x="6.311" y="76.512" size="0.6096" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="7.234" y="75.957" size="0.6096" layer="27" font="vector"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -14907,7 +14905,7 @@ design rules under a new name.</description>
 <contactref element="U4" pad="25"/>
 <contactref element="C28" pad="2"/>
 <contactref element="C34" pad="2"/>
-<contactref element="C36" pad="2"/>
+<contactref element="C36" pad="-"/>
 <contactref element="C38" pad="2"/>
 <contactref element="C24" pad="-"/>
 <contactref element="C26" pad="2"/>
@@ -14955,7 +14953,7 @@ design rules under a new name.</description>
 <contactref element="U5" pad="30"/>
 <contactref element="C29" pad="2"/>
 <contactref element="C35" pad="2"/>
-<contactref element="C37" pad="2"/>
+<contactref element="C37" pad="-"/>
 <contactref element="C39" pad="2"/>
 <contactref element="C25" pad="-"/>
 <contactref element="C27" pad="2"/>
@@ -15001,7 +14999,7 @@ design rules under a new name.</description>
 <via x="62.4" y="64.9" extent="1-16" drill="0.6"/>
 <via x="56.7" y="64.85" extent="1-16" drill="0.6"/>
 <via x="66.4" y="64.85" extent="1-16" drill="0.6"/>
-<via x="70.5" y="64.9" extent="1-16" drill="0.6"/>
+<via x="70.8" y="64.85" extent="1-16" drill="0.6"/>
 <via x="60.6" y="72.7" extent="1-16" drill="0.3"/>
 <wire x1="60.846" y1="71.3836" x2="60.846" y2="72.446" width="0.2" layer="1"/>
 <wire x1="60.846" y1="72.446" x2="60.6" y2="72.7" width="0.2" layer="1"/>
@@ -15011,10 +15009,6 @@ design rules under a new name.</description>
 <wire x1="66.45" y1="68.9" x2="66.45" y2="66.4" width="0.6096" layer="1"/>
 <wire x1="66.45" y1="66.4" x2="66.45" y2="64.95" width="0.6096" layer="1"/>
 <wire x1="66.45" y1="64.95" x2="66.4" y2="64.85" width="0.6096" layer="1"/>
-<wire x1="70.45" y1="68.9" x2="70.45" y2="66.9" width="0.6096" layer="1"/>
-<wire x1="70.45" y1="66.9" x2="70.55" y2="66.4" width="0.6096" layer="1"/>
-<wire x1="70.55" y1="66.4" x2="70.55" y2="65.05" width="0.6096" layer="1"/>
-<wire x1="70.55" y1="65.05" x2="70.5" y2="64.9" width="0.6096" layer="1"/>
 <wire x1="56.75" y1="68.9" x2="56.75" y2="66.4" width="0.6096" layer="1"/>
 <wire x1="56.75" y1="66.4" x2="56.75" y2="64.9" width="0.6096" layer="1"/>
 <wire x1="56.75" y1="64.9" x2="56.7" y2="64.85" width="0.6096" layer="1"/>
@@ -15031,13 +15025,11 @@ design rules under a new name.</description>
 <wire x1="18.15" y1="73.1" x2="16.4" y2="73.1" width="0.6096" layer="1"/>
 <wire x1="51" y1="75.35" x2="51" y2="73.1" width="0.6096" layer="1"/>
 <wire x1="52.75" y1="73.1" x2="51" y2="73.1" width="0.6096" layer="1"/>
-<wire x1="36.05" y1="68.9" x2="36.05" y2="66.9" width="0.2" layer="1"/>
-<wire x1="36.05" y1="66.9" x2="36.15" y2="66.4" width="0.254" layer="1"/>
 <wire x1="32.05" y1="68.9" x2="32.05" y2="66.4" width="0.2" layer="1"/>
 <wire x1="28.05" y1="68.9" x2="28.05" y2="66.4" width="0.254" layer="1"/>
 <via x="28" y="64.9" extent="1-16" drill="0.6"/>
 <via x="32" y="64.9" extent="1-16" drill="0.6"/>
-<via x="36.1" y="64.9" extent="1-16" drill="0.6"/>
+<via x="36.4" y="64.9" extent="1-16" drill="0.6"/>
 <wire x1="12.8" y1="89.25" x2="15.2" y2="89.25" width="0.6096" layer="1"/>
 <wire x1="29.7" y1="89.25" x2="32.1" y2="89.25" width="0.6096" layer="1"/>
 <wire x1="34.35" y1="59" x2="34.35" y2="56.7" width="0.6096" layer="1"/>
@@ -15241,6 +15233,15 @@ design rules under a new name.</description>
 <wire x1="22.175" y1="84.775" x2="20.3" y2="84.775" width="0.6096" layer="1"/>
 <via x="70.75" y="73.55" extent="1-16" drill="0.3"/>
 <wire x1="-3.165" y1="65.785" x2="-3.15" y2="65.8" width="0.2" layer="1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="70.45" y1="68.9" x2="70.45" y2="66.725" width="0.6096" layer="1"/>
+<wire x1="70.45" y1="66.725" x2="70.775" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="70.8" y1="64.85" x2="70.8" y2="66.375" width="0.6096" layer="1"/>
+<wire x1="70.8" y1="66.375" x2="70.775" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="36.05" y1="68.9" x2="36.05" y2="66.725" width="0.6096" layer="1"/>
+<wire x1="36.05" y1="66.725" x2="36.375" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="36.4" y1="64.9" x2="36.4" y2="66.375" width="0.6096" layer="1"/>
+<wire x1="36.4" y1="66.375" x2="36.375" y2="66.4" width="0.6096" layer="1"/>
 </signal>
 <signal name="VDD">
 <contactref element="C7" pad="1"/>
@@ -15253,7 +15254,7 @@ design rules under a new name.</description>
 <contactref element="C34" pad="1"/>
 <contactref element="U4" pad="48"/>
 <contactref element="C38" pad="1"/>
-<contactref element="C36" pad="1"/>
+<contactref element="C36" pad="+"/>
 <contactref element="T1" pad="2"/>
 <contactref element="R26" pad="2"/>
 <contactref element="U4" pad="18"/>
@@ -15274,7 +15275,7 @@ design rules under a new name.</description>
 <contactref element="C35" pad="1"/>
 <contactref element="U5" pad="48"/>
 <contactref element="C39" pad="1"/>
-<contactref element="C37" pad="1"/>
+<contactref element="C37" pad="+"/>
 <contactref element="T2" pad="2"/>
 <contactref element="R27" pad="2"/>
 <contactref element="U5" pad="18"/>
@@ -15296,8 +15297,6 @@ design rules under a new name.</description>
 <wire x1="59.4" y1="83.05" x2="59.575" y2="83.025" width="0.254" layer="1"/>
 <wire x1="56.8836" y1="72.8568" x2="56.8836" y2="71.9336" width="0.2" layer="1"/>
 <wire x1="56.8836" y1="71.9336" x2="55.6" y2="70.65" width="0.2" layer="1"/>
-<wire x1="68.75" y1="68.9" x2="68.75" y2="66.9" width="0.2" layer="1"/>
-<wire x1="68.75" y1="66.9" x2="68.65" y2="66.4" width="0.254" layer="1"/>
 <wire x1="26.954" y1="79.8164" x2="26.954" y2="82.504" width="0.2" layer="1"/>
 <wire x1="26.954" y1="82.504" x2="27" y2="82.75" width="0.254" layer="1"/>
 <wire x1="27" y1="82.75" x2="25.2" y2="82.75" width="0.2" layer="1"/>
@@ -15316,13 +15315,9 @@ design rules under a new name.</description>
 <via x="2" y="81.3" extent="1-16" drill="0.6"/>
 <wire x1="3.59" y1="81.23" x2="2.07" y2="81.23" width="0.8128" layer="1"/>
 <wire x1="2.07" y1="81.23" x2="2" y2="81.3" width="0.8128" layer="1"/>
-<via x="68.6" y="64.9" extent="1-16" drill="0.6"/>
-<wire x1="68.6" y1="64.9" x2="68.6" y2="66.75" width="0.8128" layer="1"/>
-<wire x1="68.6" y1="66.75" x2="68.65" y2="66.4" width="0.8128" layer="1"/>
-<wire x1="34.35" y1="68.9" x2="34.35" y2="66.9" width="0.8128" layer="1"/>
-<wire x1="34.35" y1="66.9" x2="34.25" y2="66.4" width="0.8128" layer="1"/>
-<via x="14.5206" y="64.328" extent="1-16" drill="0.6"/>
-<via x="49.4286" y="64.3026" extent="1-16" drill="0.6"/>
+<via x="68.45" y="64.85" extent="1-16" drill="0.6"/>
+<via x="14.4206" y="64.828" extent="1-16" drill="0.6"/>
+<via x="49.0286" y="64.8026" extent="1-16" drill="0.6"/>
 <via x="59.1382" y="72.7618" extent="1-16" drill="0.3"/>
 <via x="63.3" y="83.8" extent="1-16" drill="0.6"/>
 <wire x1="61.675" y1="83.35" x2="62.85" y2="83.35" width="0.8128" layer="1"/>
@@ -15336,9 +15331,7 @@ design rules under a new name.</description>
 <wire x1="28.6" y1="83" x2="28.1" y2="82.5" width="0.6096" layer="1"/>
 <wire x1="28.1" y1="82.5" x2="27.05" y2="82.5" width="0.6096" layer="1"/>
 <wire x1="27.05" y1="82.5" x2="27" y2="82.75" width="0.6096" layer="1"/>
-<via x="34.3" y="64.9" extent="1-16" drill="0.6"/>
-<wire x1="34.25" y1="66.4" x2="34.25" y2="64.95" width="0.8128" layer="1"/>
-<wire x1="34.25" y1="64.95" x2="34.3" y2="64.9" width="0.8128" layer="1"/>
+<via x="34" y="64.9" extent="1-16" drill="0.6"/>
 <via x="25" y="72.8" extent="1-16" drill="0.3"/>
 <wire x1="24.9474" y1="71.3836" x2="24.9474" y2="72.7526" width="0.2" layer="1"/>
 <wire x1="24.9474" y1="72.7526" x2="25" y2="72.8" width="0.2" layer="1"/>
@@ -15360,10 +15353,6 @@ design rules under a new name.</description>
 <wire x1="55.3974" y1="70.993" x2="54.457" y2="70.993" width="0.2" layer="1"/>
 <wire x1="54.457" y1="70.993" x2="54.45" y2="71" width="0.2" layer="1"/>
 <wire x1="59.3474" y1="72.5526" x2="59.1382" y2="72.7618" width="0.2" layer="1"/>
-<wire x1="52.75" y1="64.3" x2="49.4312" y2="64.3" width="0.6096" layer="1"/>
-<wire x1="49.4312" y1="64.3" x2="49.4286" y2="64.3026" width="0.6096" layer="1"/>
-<wire x1="49.1484" y1="66.4" x2="49.1484" y2="64.5828" width="0.6096" layer="1"/>
-<wire x1="49.1484" y1="64.5828" x2="49.4286" y2="64.3026" width="0.6096" layer="1"/>
 <wire x1="22.4836" y1="73.8474" x2="21.2694" y2="73.8474" width="0.2" layer="1"/>
 <wire x1="21.2694" y1="73.8474" x2="21.0566" y2="73.6346" width="0.2" layer="1"/>
 <wire x1="21.0566" y1="73.6346" x2="21.0566" y2="71.2216" width="0.2" layer="1"/>
@@ -15377,10 +15366,6 @@ design rules under a new name.</description>
 <wire x1="21.9202" y1="70.0024" x2="21.2344" y2="70.0024" width="0.2" layer="1"/>
 <wire x1="21.2344" y1="70.0024" x2="21.082" y2="69.85" width="0.2" layer="1"/>
 <wire x1="21.082" y1="69.85" x2="21.082" y2="69.1896" width="0.2" layer="1"/>
-<wire x1="14.52" y1="66.4" x2="14.52" y2="64.3286" width="0.6096" layer="1"/>
-<wire x1="14.52" y1="64.3286" x2="14.5206" y2="64.328" width="0.6096" layer="1"/>
-<wire x1="18.15" y1="64.35" x2="14.5426" y2="64.35" width="0.6096" layer="1"/>
-<wire x1="14.5426" y1="64.35" x2="14.5206" y2="64.328" width="0.6096" layer="1"/>
 <via x="54.534" y="69.408" extent="1-16" drill="0.6"/>
 <wire x1="54.534" y1="69.408" x2="54.534" y2="70.916" width="0.6096" layer="1"/>
 <wire x1="54.534" y1="70.916" x2="54.45" y2="71" width="0.6096" layer="1"/>
@@ -15445,6 +15430,22 @@ design rules under a new name.</description>
 <wire x1="7.39" y1="67.74" x2="7.4" y2="67.75" width="0.8128" layer="1"/>
 <wire x1="7.4" y1="69.05" x2="7.4" y2="67.8" width="1.016" layer="1"/>
 <wire x1="7.4" y1="70.35" x2="7.4" y2="69.05" width="1.016" layer="1"/>
+<wire x1="14.52" y1="66.4" x2="14.4206" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="14.4206" y1="66.4" x2="14.4206" y2="64.828" width="0.6096" layer="1"/>
+<wire x1="18.15" y1="64.35" x2="14.8986" y2="64.35" width="0.6096" layer="1"/>
+<wire x1="14.8986" y1="64.35" x2="14.4206" y2="64.828" width="0.6096" layer="1"/>
+<wire x1="49.0286" y1="64.8026" x2="49.0286" y2="66.2802" width="0.6096" layer="1"/>
+<wire x1="49.0286" y1="66.2802" x2="49.1484" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="52.75" y1="64.3" x2="49.5312" y2="64.3" width="0.6096" layer="1"/>
+<wire x1="49.5312" y1="64.3" x2="49.0286" y2="64.8026" width="0.6096" layer="1"/>
+<wire x1="68.75" y1="68.9" x2="68.75" y2="66.725" width="0.6096" layer="1"/>
+<wire x1="68.75" y1="66.725" x2="68.425" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="68.45" y1="64.85" x2="68.45" y2="66.375" width="0.6096" layer="1"/>
+<wire x1="68.45" y1="66.375" x2="68.425" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="34.35" y1="68.9" x2="34.35" y2="66.725" width="0.6096" layer="1"/>
+<wire x1="34.35" y1="66.725" x2="34.025" y2="66.4" width="0.6096" layer="1"/>
+<wire x1="34" y1="64.9" x2="34" y2="66.375" width="0.6096" layer="1"/>
+<wire x1="34" y1="66.375" x2="34.025" y2="66.4" width="0.6096" layer="1"/>
 </signal>
 <signal name="VIN">
 <contactref element="SW3" pad="1"/>
@@ -16754,9 +16755,6 @@ design rules under a new name.</description>
 <wire x1="60.6" y1="75.1" x2="58.5" y2="75.1" width="0.2" layer="16"/>
 <wire x1="58.5" y1="75.1" x2="55.5" y2="72.1" width="0.2" layer="16"/>
 <wire x1="55.5" y1="72.1" x2="50.4" y2="72.1" width="0.2" layer="16"/>
-<wire x1="8" y1="79.2808" x2="8.8808" y2="79.2808" width="0.2" layer="1"/>
-<wire x1="8.8808" y1="79.2808" x2="9.2" y2="79.6" width="0.2" layer="1"/>
-<wire x1="9.2" y1="79.6" x2="9.2" y2="80.2" width="0.2" layer="1"/>
 <contactref element="U6" pad="P$34"/>
 <wire x1="-10.85" y1="102.275" x2="-10.85" y2="98" width="0.2" layer="1"/>
 <via x="-10.85" y="98" extent="1-16" drill="0.3"/>
@@ -16776,6 +16774,12 @@ design rules under a new name.</description>
 <wire x1="-18.25" y1="90.15" x2="-18.39" y2="90.01" width="0.2" layer="16"/>
 <wire x1="-18.39" y1="90.01" x2="-18.39" y2="82.8" width="0.2" layer="16"/>
 <wire x1="-18.39" y1="82.8" x2="-17.18" y2="81.59" width="0.2" layer="16"/>
+<contactref element="R2" pad="2"/>
+<wire x1="7.85" y1="77.55" x2="8.8" y2="77.55" width="0.4064" layer="1"/>
+<wire x1="8.8" y1="77.55" x2="9.2" y2="77.95" width="0.4064" layer="1"/>
+<wire x1="9.2" y1="80.2" x2="9.2" y2="77.95" width="0.4064" layer="1"/>
+<wire x1="8" y1="79.2808" x2="7.85" y2="79.1308" width="0.4064" layer="1"/>
+<wire x1="7.85" y1="79.1308" x2="7.85" y2="77.55" width="0.4064" layer="1"/>
 </signal>
 <signal name="MP1_1">
 <contactref element="U4" pad="10"/>
