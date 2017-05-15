@@ -1,7 +1,7 @@
 # SigmaMIX
 The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Source Hardware.
 
-**I haven't made sure them work yet on May 7 2017.**
+**I made sure to be able to control two ADAU1701 from the Sigma Studio with the USBi on May 15 2017!!!**
 
 ![SigmaMIX Board](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_dsp_brd.png "SigmaMIX Board")
 
