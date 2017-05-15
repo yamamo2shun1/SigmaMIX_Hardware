@@ -9,7 +9,7 @@ The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Sou
 * DSP: ANALOG DEVICES SigmaDSP [ADAU1701](http://www.analog.com/jp/products/processors-dsp/sigmadsp-audio-processors/adau1701.html) x2
 * BLE: Silicon Labs [BGM113](http://jp.silabs.com/products/wireless/bluetooth/bluetooth-low-energy-modules/bgm113-bluetooth-low-energy-module)
 * Audio: RCA Input x4 and RCA Output x8
-* Power: ONLY 5-16V input [MIC39100](http://www.microchip.com/wwwproducts/en/MIC39100).
+* Power: ONLY 5-16V input [MIC39101](http://www.microchip.com/wwwproducts/en/MIC39100).
 * Size: 117.5mm x 59.5mm
 
 ## HARDWARE LICENSE
