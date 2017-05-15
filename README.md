@@ -4,6 +4,7 @@ The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Sou
 **I made sure to be able to control two ADAU1701 from the Sigma Studio with the USBi on May 15 2017!!!**
 
 ![SigmaMIX Board](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_dsp_brd.png "SigmaMIX Board")
+![SigmaMIX PCB](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_mix_pcb.jpg "SigmaMIX PCB")
 
 ## SPEC
 * DSP: ANALOG DEVICES SigmaDSP [ADAU1701](http://www.analog.com/jp/products/processors-dsp/sigmadsp-audio-processors/adau1701.html) x2
