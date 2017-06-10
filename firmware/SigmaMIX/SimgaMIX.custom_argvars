@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarUserArgVars>
+    <group name="BLE_SDK" active="true">
+        <variable>
+            <name>BLUETOOTH_APP_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/app/bluetooth_2.3</value>
+        </variable>
+        <variable>
+            <name>BLUETOOTH_PROTOCOL_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/protocol/bluetooth_2.3</value>
+        </variable>
+        <variable>
+            <name>CMSIS_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/platform/CMSIS</value>
+        </variable>
+        <variable>
+            <name>DEVICE_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/platform/Device</value>
+        </variable>
+        <variable>
+            <name>EMLIB_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/platform/emlib</value>
+        </variable>
+        <variable>
+            <name>EMDRV_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/platform/emdrv</value>
+        </variable>
+        <variable>
+            <name>GLIB_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/platform/middleware/glib</value>
+        </variable>
+        <variable>
+            <name>KIT_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/hardware/kit</value>
+        </variable>
+        <variable>
+            <name>RAIL_LIB_PATH</name>
+            <value>C:\SiliconLabs\SimplicityStudio\v4\developer\sdks\gecko_sdk_suite\v1.0/platform/radio/rail_lib</value>
+        </variable>
+    </group>
+</iarUserArgVars>
