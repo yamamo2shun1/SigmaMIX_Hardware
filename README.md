@@ -7,8 +7,9 @@ The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Sou
 ![SigmaMIX PCB](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_mix_pcb.jpg "SigmaMIX PCB")
 
 ## Test Video
-[First Scratch Test](https://www.instagram.com/p/BUi_Y2OhvBm/)  
+[Phono EQ Test](https://www.instagram.com/p/BVVsefTBJXY/)  
 [Beat and Sine Tone Test](https://www.instagram.com/p/BVFF-J9hF4o/)
+[First Scratch Test](https://www.instagram.com/p/BUi_Y2OhvBm/)  
 
 ## SPEC
 * DSP: ANALOG DEVICES SigmaDSP [ADAU1701](http://www.analog.com/jp/products/processors-dsp/sigmadsp-audio-processors/adau1701.html) x2
