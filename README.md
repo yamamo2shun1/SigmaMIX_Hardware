@@ -8,7 +8,7 @@ The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Sou
 
 ## Test Video
 [Phono EQ Test](https://www.instagram.com/p/BVVsefTBJXY/)  
-[Beat and Sine Tone Test](https://www.instagram.com/p/BVFF-J9hF4o/)
+[Beat and Sine Tone Test](https://www.instagram.com/p/BVFF-J9hF4o/)  
 [First Scratch Test](https://www.instagram.com/p/BUi_Y2OhvBm/)  
 
 ## SPEC
