@@ -1,12 +1,18 @@
 # SigmaMIX
 The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Source Hardware.
 
+# Firmware/Software Repository
+* [SigmaMIX Firmware for SiLabs BGM113](https://github.com/tkrworks/SigmaMIX_Firmware)  
+* [SigmaMIX Remote App for Android](https://github.com/tkrworks/SigmaMIX_Remote)
+
 **I made sure to be able to control two ADAU1701 from the BGM113 via I2C on June 7 2017!!!**
 
 ![SigmaMIX Board](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_dsp_brd.png "SigmaMIX Board")
 ![SigmaMIX PCB](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_mix_pcb.jpg "SigmaMIX PCB")
 
 ## Test Video
+[Phono and Line inputs Mix and Fader Cutting Test](https://www.instagram.com/p/BV4aKTPhfiU/)  
+[3-Band EQ Test via BLE](https://www.instagram.com/p/BVq-pJHB9hm/)  
 [Phono EQ Test](https://www.instagram.com/p/BVVsefTBJXY/)  
 [Beat and Sine Tone Test](https://www.instagram.com/p/BVFF-J9hF4o/)  
 [First Scratch Test](https://www.instagram.com/p/BUi_Y2OhvBm/)  
