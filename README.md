@@ -11,6 +11,8 @@ The SigmaMIX is a DSP/BLE board for Turntablist/Portablist, and it's an Open Sou
 ![SigmaMIX PCB](https://github.com/tkrworks/SigmaMIX/blob/for_markdown/sigma_mix_pcb.jpg "SigmaMIX PCB")
 
 ## Test Video
+[Delay Test](https://www.instagram.com/p/BXrRHsZBKkE/)  
+[Effect and Scratch DEMO](https://www.instagram.com/p/BXWzQCQBJe1/)  
 [Phono and Line inputs Mix and Fader Cutting Test](https://www.instagram.com/p/BV4aKTPhfiU/)  
 [3-Band EQ Test via BLE](https://www.instagram.com/p/BVq-pJHB9hm/)  
 [Phono EQ Test](https://www.instagram.com/p/BVVsefTBJXY/)  
